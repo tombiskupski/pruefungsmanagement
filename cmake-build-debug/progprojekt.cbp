@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="progprojekt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="progprojekt">
+				<Option output="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug/progprojekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 progprojekt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="progprojekt/fast">
+				<Option output="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug/progprojekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 progprojekt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tombiskupski/Desktop/HfT/Semester\ 3/Prog3/progprojekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Anmeldung.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Anmeldung.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefung.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefung.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/PruefungsTag.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/PruefungsTag.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Raum.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Raum.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Student.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Student.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Zeit.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Zeit.h">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/main.cpp">
+			<Option target="progprojekt"/>
+		</Unit>
+		<Unit filename="/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

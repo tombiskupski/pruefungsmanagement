@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h
+istream
+-
+ostream
+-
+iostream
+-
+
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefung.h
+string
+-
+vector
+-
+Pruefer.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h
+
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Raum.h
+string
+-
+iostream
+-
+
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Student.h
+vector
+-
+
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+Raum.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Raum.h
+Pruefung.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefung.h
+Pruefer.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h
+Student.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Student.h
+vector
+-
+

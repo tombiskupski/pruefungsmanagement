@@ -1,0 +1,3 @@
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/cmake-build-debug/CMakeFiles/progprojekt.dir
