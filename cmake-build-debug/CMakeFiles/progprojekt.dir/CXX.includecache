@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Anmeldung.h
+string
+-
+ostream
+-
+
 /Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h
 istream
 -
@@ -49,6 +55,10 @@ Pruefer.h
 /Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Pruefer.h
 Student.h
 /Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Student.h
+Anmeldung.h
+/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/Anmeldung.h
 vector
+-
+time.h
 -
 

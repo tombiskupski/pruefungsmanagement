@@ -11,6 +11,8 @@ using namespace std;
 
 class PruefungsTag {
 public:
+
+
 private:
     int anzahlStunden;
     vector<int> angPruefung;

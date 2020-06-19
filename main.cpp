@@ -6,8 +6,13 @@
 #include "Pruefung.h"
 #include "Pruefer.h"
 #include "Student.h"
-
+#include "Anmeldung.h"
 #include <vector>
+
+//zum Zeitmessen
+#include <time.h>
+clock_t start, ende;
+double time1;
 
 using namespace std;
 
@@ -17,6 +22,10 @@ vector<Raum> raeume;            //Liste mit räumen
 vector<Pruefung> pruefungen;    //Liste mit prüfungen
 vector<Pruefer> prueferliste;   //Liste mit Prüfern
 vector<Student> studenten;
+vector<Pruefung> ungueltigePruefungen;
+vector<Anmeldung> ungueltigeAnmeldungen;
+
+
 
 void einlesenPruefungen() {
 
@@ -86,9 +95,6 @@ void einlesenPruefungen() {
             if (zeile[i] == ';') {
             }*/
 
-
-
-
         for (int i = 0; i < prueferliste.size(); i++) {
 
             if (prueferliste.at(i).getPrueferID() == pruefer1ID) {
@@ -113,8 +119,14 @@ void einlesenPruefungen() {
             prueferliste.push_back(pr2);
         }
 
+        if (dauer == 0){
+            ungueltigePruefungen.push_back(Pruefung(pversion, pnr, dauer, pr1, pr2, stg, pruefungsname));
+        }else{
+            pruefungen.push_back(Pruefung(pversion, pnr, dauer, pr1, pr2, stg, pruefungsname));
+        }
 
-        pruefungen.push_back(Pruefung(pversion, pnr, dauer, pr1, pr2, stg, pruefungsname));
+
+
 
 
         pr1 = NULL;
@@ -123,7 +135,7 @@ void einlesenPruefungen() {
         p2existiert = false;
 
     }
-    pruefungen.pop_back();
+    ungueltigePruefungen.pop_back();
     cout << "Prüfungen Erstellt" << endl;
     cout << "Prüfer erstellt " << endl;
     sort(prueferliste.begin(), prueferliste.end(), greater<Pruefer>());
@@ -155,6 +167,7 @@ void einlesenPruefungen() {
         cout << pversion << endl;
         //Einfügen der Prüfer in die Prüferliste und überprüfen, ob der Prüfer bereits vorhanden ist
         */
+
 }
 
 void einlesenRaumlisten() {
@@ -186,13 +199,14 @@ void einlesenRaumlisten() {
 
     }
 
-    cout << "Räume erstellt"<< endl;
+    cout << "Räume erstellt" << endl;
 }
 
 
 void einlesenAnmeldungen(){
     ifstream datei("/Users/tombiskupski/Desktop/HfT/Semester 3/Prog3/progprojekt/InputData/Anmeldungen_WS2019_KL.csv");
     string zeile;
+    bool zugeteilt = false;
 
     while (getline(datei, zeile)){
         for(int i = 0; i < zeile.size(); i++) {
@@ -204,11 +218,7 @@ void einlesenAnmeldungen(){
         if (zeile[0] == 'm') {
             continue;
         }
-/*
-        vector<vector<vector<int>>> pruefungszuordnung;
-        pruefungszuordnung[0][0][0] = 1;
-        cout<< pruefungszuordnung[0][0][0] << endl;
-*/
+
         stringstream zeilenpuffer(zeile);
         long int matrikelnr;
         string stg;
@@ -222,33 +232,44 @@ void einlesenAnmeldungen(){
         //Bisher noch doppelte Matrikelnummern dabei
         studenten.push_back(Student(matrikelnr));
 
+        zugeteilt = false;
         for(int i = 0; i < pruefungen.size(); i++){
-
                 if (pnr == pruefungen[i].getPnr()){
                     if (pversion == pruefungen[i].getPversion()){
                         pruefungen[i].matrikelnrListe.push_back(matrikelnr);
+                        zugeteilt = true;
+                        break;
                     }
                 }
         }
+
+        if (!zugeteilt){
+            ungueltigeAnmeldungen.push_back(Anmeldung(matrikelnr,stg,pversion,pnr,pform,dtext,psem));
+        }
+
     }
     cout << "Studenten erstellt" << endl;
 }
 
 int main() {
+
+    start = clock();
+
     einlesenRaumlisten();
     einlesenPruefungen();
     einlesenAnmeldungen();
 
-
     cout << "Ausgabe Studenten in einer Prüfung" << endl;
 
 
-    cout << "Prüfungsnr: " << pruefungen[3].getPnr()<< endl;
-    cout << "Prüfungsversion: " << pruefungen[3].getPversion()<< endl;
-    cout << "Anzahl studenten: " << pruefungen[3].matrikelnrListe.size()<< endl;
+    int ausgabe = 14;
 
-    for (int i = 0; i < pruefungen[3].matrikelnrListe.size(); ++i) {
-        cout << pruefungen[3].matrikelnrListe[i] << endl;
+    cout << "Prüfungsnr: " << pruefungen[ausgabe].getPnr()<< endl;
+    cout << "Prüfungsversion: " << pruefungen[ausgabe].getPversion()<< endl;
+    cout << "Anzahl studenten: " << pruefungen[ausgabe].matrikelnrListe.size()<< endl;
+
+    for (int i = 0; i < pruefungen[ausgabe].matrikelnrListe.size(); ++i) {
+        cout << pruefungen[ausgabe].matrikelnrListe[i] << endl;
     }
 
     cout << "Ausgabe Studenten in dieser Prüfung Fertig" << endl;
@@ -264,28 +285,35 @@ int main() {
 for(int i=0; i<raeume.size(); i++){
     cout << raeume[i] << endl;
 }
+
 */
-    /*
+/*
     for (int i = 0; i < pruefungen.size(); i++) {
         cout << pruefungen[i] << endl;
     }
     cout << "Anzahl prüfungen: " << pruefungen.size() << endl;
-    */
+*/
+/*
+ *
+    for (int i = 0; i < ungueltigePruefungen.size(); i++) {
+        cout << ungueltigePruefungen[i] << endl;
+    }
+    cout << "Anzahl prüfungen: " << ungueltigePruefungen.size() << endl;
 
+*/
+/*
+    for (int i = 0; i < ungueltigeAnmeldungen.size(); i++) {
+        cout << ungueltigeAnmeldungen[i] << endl;
+    }
 
-
-
-
-/*  int dim1=75, dim2=110, dim3=78;
-
-    vector<vector<vector<int> > > matrix(dim1, vector<vector<int> >(dim2, vector<int>(dim3)));
-
-    pruefungszuordnung[0][0][0] = 1;
-
-    pruefungszuordnung[0][0][0] = 1;
-
-    cout<< "Zuordnung: "<< pruefungszuordnung[0][0][0] << endl;
+    cout << "Ungueltige Anmeldungen: " << ungueltigeAnmeldungen.size() << endl;
 */
 
+    ende = clock();
+    time1 = (double) (ende - start) / CLOCKS_PER_SEC;
+
+
+
+    cout << "Benötigte Zeit: " << time1 << endl;
 
 }
